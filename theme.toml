@@ -5,7 +5,7 @@ description = "Modern."
 homepage = "https://github.com/mritter-cidb/hugo-cidb-modern"
 tags = ["blog", "plain", "blank", "starter"]
 features = ["blog"]
-min_version = 0.19
+min_version = 1.0
 
 [author]
   name = "bluffy"
