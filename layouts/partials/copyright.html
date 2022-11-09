@@ -6,10 +6,9 @@
             <div class="col col-12">
                 <div class="d-flex flex-column flex-sm-row text-center text-sm-start">
                     <div  class="flex-grow-1">{{ .Site.Params.copyright.text | safeHTML }}</div>
-                        {{ range $index, $element := .Site.Params.copyright.links }}
-              
+                        {{ range $index, $element := .Site.Params.copyright.links }}                                
                             {{ if gt $index 0 }} | {{ end }}
-                          <av  href="{{  $element.url | relURL }}">{{ $element.name }}</a> 
+                          <a href="{{  $element.url | relURL }}">{{ $element.name }}</a> 
                         {{ end }}
                         
                  {{ if .Site.Params.copyright.show_template_copyright }}
