@@ -9,7 +9,7 @@
                         {{ range $index, $element := .Site.Params.copyright.links }}
               
                             {{ if gt $index 0 }} | {{ end }}
-                            <a href="{{ $element.url }}">{{ $element.name }}</a> 
+                          <av  href="{{  $element.url | relURL }}">{{ $element.name }}</a> 
                         {{ end }}
                         
                  {{ if .Site.Params.copyright.show_template_copyright }}
