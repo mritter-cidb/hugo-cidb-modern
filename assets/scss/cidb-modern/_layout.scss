@@ -1,0 +1,35 @@
+/* layout */
+
+#content {
+
+    &.single{
+        padding-bottom: 40px;
+    }
+    
+}
+
+#ly-top {
+    background-color: #000;
+}
+
+#ly-nav {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: #000;
+    z-index: 10000;
+
+}
+
+#footer {
+    background: #555555;
+    padding: 50px 0;
+    color: #ccc;
+}
+#copyright {
+    background: #333;
+    color: #ccc;
+    padding: 50px 0;
+    font-size: 12px;
+    line-height: 28px;
+}

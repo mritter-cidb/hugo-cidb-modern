@@ -1,0 +1,184 @@
+baseURL = 'http://example.org/'
+languageCode = 'de-de'
+title = 'modern'
+themesDir = "../.."
+theme = "cidb-modern"
+
+#[[params.landing]]
+#    enable = true
+#    identifier = "id123"
+#    weight = 100
+#    html = false
+#    partial = "landing/text"
+#    noMarkdown = false
+#    classRow = "" 
+#    text = """
+#"""
+
+
+[params.top]
+    enable = false
+    fluid = true
+    text = "<p>&nbsp;</p>"
+    html = false
+
+[params.nav]
+    enable = true
+    fluid = false
+
+[params.footer]
+    enable = true
+    fluid = false
+    about_us = "<p>aubaut ouse</p>"
+    address = """<p class="text-uppercase"><strong>name</strong>
+        <br>Wac
+        <br>72
+        <br>
+        <br>Telefon: (0 75 73) 9 20 66
+        <br>Telefax: (0 75 73) 9 20 67
+        <br>
+        <br>E-MAIL: 
+      </p>"""
+
+[params.copyright]
+    enable = true
+    fluid = false
+    show_template_copyright = false
+    text = "Copyright (c) 2022, "
+[[params.copyright.links]]
+    name = "Impressum & Datenschutz"
+    url = "/impressum"
+#[[params.copyright.links]]
+#    name = "Impressum"
+#    url = "/impressum"
+#[[params.copyright.links]]
+#    name = "Datenschutz"
+#    url = "/datenschutz"
+
+
+
+[[params.landing]]
+    enable = true
+    weight = 100
+    identifier = "landing-title"
+    class = "text-center"
+    text = """
+# Die 
+#### Ktest
+[Details](software)
+    """
+    partial = "landing/text"
+
+
+[[params.landing]]
+    enable = true
+    weight = 200
+    identifier = "landing-overwiew"
+    image = "img/landing/app_mobile.jpg"
+    image_alt = "Mobile App"
+    class="ct_text-picture"
+    # Optional
+    classRow = "g-0" #no gutter
+    image_left = false
+    # Content
+    text = """
+## Einfach!
+## Sicher!
+## Zuverlässig!
+## Durch Ihren bevorzugten Internetbrowser auf allen Plattformen verfügbar!
+- Egal ob Android, iPhone, iPad Windows, Mac oder Linux
+- Das System läuft auf jedem bekannten Web-Browser sicher und zuverlässig:
+  - Chrome
+  - Microsoft Edge
+  - Safari
+  - Morzilla Firefox
+    """
+    partial = "landing/text_picture"
+
+[[params.landing]]
+    enable = true
+    weight = 300
+    identifier = "landing-features"
+    class="ci-landing-features"
+    # Content
+    partial = "landing/features"  
+
+[[params.landing.data]]
+    weight = 1
+    name = "revisionssicher <br>& einfach"
+    icon = "bi bi-pencil-square"
+    description = "Überprüfen oder Abändern von Gegenständen, Zuständen oder Prozessen durch einen einfachen und übersichtlichen Aufbau des Systems."
+
+[[params.landing.data]]
+    weight = 2
+    name = "Mindestinhalt klar<br> vorgegeben"
+    icon = "bi bi-paragraph"
+    url = ""
+    description = "Die gesetzlichen Vorschriften sind klar definiert und vorgegeben. Diese können beliebig individuell erweitert werden."
+
+[[params.landing.data]]
+    weight = 3
+    name = "Experten-<br>system"
+    icon = "bi bi-chat-square-text"
+    url = ""
+    description = "Für Betreiber und Dienstleister im Bereich der technischen Anlagen"
+
+[[params.landing.data]]
+    weight = 4
+    name = "Mandanten -<br>Rollen"
+    icon = "bi bi-people-fill"
+    url = ""
+    description = "Mithilfe unterschiedlicher Mandanten-Rollen sind Sie in der Lage Arbeitsaufträge zu erstellen und zuzuteilen. Der Durchführende wiederum meldet im Anschluss die Arbeiten als erledigt."
+
+[[params.landing.data]]
+    weight = 5
+    name = "Informationen<br>visualisieren"
+    icon = "bi bi-upload"
+    url = ""
+    description = "Fotos und Dokumente können einfach und schnell online in das System hochgeladen werden."
+
+[[params.landing.data]]
+    weight = 6
+    name = "Immer <br>Aktuell"
+    icon = "bi bi-calendar-week"
+    url = ""
+    description = "Das System wird regelmäßig redaktionell gepflegt, angepasst und optimiert."
+
+
+[[params.landing]]
+    enable = true
+    weight = 400
+    identifier = "landing-advantages"
+    image = "img/landing/app_all_devices.jpg"
+    image_alt = "Mobile App"
+    class="ct_text-picture"
+    # Optional
+    classRow = "g-0" #no gutter
+    image_left = true
+    # Content
+    text = """
+## Ihre Vorteile im Überblick
+- Erfüllung der gesetzlichen Anforderungen nach §42 BlmSchV
+- Keine lokale Softwareinstallation notwendig
+- Zugang über Ihren bevorzugten Internetbrowser
+- Einfache Struktur, vorgefertigte Menüpunkte
+- Dokumentation mit Hilfe von Fotos
+- Benutzerverwaltung und Steuerung von Zugriffsrechten
+- Betriebstagebuch auf Knopfdruck als PDF erstellen
+    """
+    partial = "landing/text_picture"
+
+
+[[params.landing]]
+    enable = true
+    weight = 500
+    html = true
+    identifier = "landing-contact"
+    class="text-center"
+    text = """
+<h4 class="gr-for-more-info-margin">Für weitere Informationen kontaktieren Sie uns direkt unter:</h4>
+<h4><i class="bi bi-telephone"></i> </h4>
+<h4><i class="bi bi-printer"></i></h4>
+<h4><i class="bi bi-envelope"></i> </h4>
+    """
+    partial = "landing/text"

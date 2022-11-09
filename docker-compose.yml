@@ -1,0 +1,22 @@
+version: "3.9"
+services:  
+  hugo:
+    image: monachus/hugo
+    volumes:
+      - ".:/usr/share/blog"
+    ports:
+      - "1313:1313"
+    ##command: hugo -b http://localhost:9080/ --config config.toml --watch
+    command: ./run.sh
+    user: "1000"
+  web:
+      image: nginx:latest
+      ports:
+          - "9080:9080"
+      volumes:
+          - ./nginx.conf:/etc/nginx/conf.d/nginx.conf
+          - ./example/public:/app
+  php:
+      image: php:fpm
+      volumes:
+          - ./public:/app

@@ -1,0 +1,30 @@
+@import "bootstrap.scss";
+@import "layout.scss";
+@import "landing.scss";
+@import "landing_class.scss";
+body {
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555555;
+}
+
+
+h1,h2,h3,h4,h5,h6 {
+    font-weight: 900;
+    line-height: 1.1;
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+}
+h1, .h1, h2, .h2, h3, .h3 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+}
+
+p {
+    margin: 0 0 10px;
+}
+
+
+
+

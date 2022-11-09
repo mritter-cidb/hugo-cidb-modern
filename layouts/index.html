@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+
+    <head>
+        {{ partial "headers.html" . }}
+        {{ partial "headers_custom.html" . }}
+    </head>
+
+    <body>
+        
+        {{ partial "top.html" . }}
+        {{ partial "nav.html" . }}
+
+        <main>
+
+            {{ if isset .Site.Params "landing" }}
+            {{ if gt (len .Site.Params.landing) 0 }}
+            {{ range sort .Site.Params.landing "weight" }}
+            {{ partial "landing_base" (dict "landing" . "Site" $.Site) }}
+            {{ end }}
+            {{ end }}
+            {{ end }}                              
+
+        </main>
+
+        {{ partial "scripts.html" . }}
+        {{ partial "footer.html" . }}           
+        {{ partial "copyright.html" . }}           
+    </body>
+
+</html>

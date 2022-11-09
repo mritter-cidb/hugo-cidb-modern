@@ -1,0 +1,28 @@
+
+.ct_text-picture {
+    .hg-text {
+        padding: 40px;
+        background-color: #555555;
+        color: #fff;
+
+        h2 {
+            font-family: "Roboto", Helvetica, Arial, sans-serif;
+            font-weight: 900;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+
+        ul {
+            font-size: 17px;
+            ul {
+                margin-top: 20px;
+
+            }
+        }
+        > ul {
+            margin-top: 60px;
+        }        
+    }
+}
+

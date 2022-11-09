@@ -1,0 +1,88 @@
+
+
+
+/* landing */
+
+.ld-section  {
+    position: relative;
+    padding: 60px 0;
+
+    .no-pb {
+        padding-bottom: 0;
+    }
+    
+}
+
+
+/* landing-identiefiers */
+
+#landing-title {
+    .hg-text {
+
+        h1, h4 {
+            text-align: center;
+            font-family: "Roboto", Helvetica, Arial, sans-serif;
+            font-weight: 900;
+            line-height: 1.1;            
+            color: #333333;         
+        }
+        h1 {
+            font-size: 36px;
+            margin-top: 20px;
+            margin-bottom: 40px;
+        }
+        h4 {
+            font-size: 18px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+    }
+}
+
+/* landing-patieals */
+
+.ld-pt_landing-features {
+
+    .hg-feature-col {
+      //  margin-bottom: 20px;
+    }
+    .box-simple {
+        text-align: center;
+      //  height: 98%;
+      height: 92%;
+        // box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+        background: white;
+        //padding-top: 20px;
+
+        h3 {
+            min-height: 60px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+
+            font-weight: normal;
+            font-size: 18px;
+            text-transform: uppercase;
+            line-height: 1.5;
+            color: #555555;
+            font-weight: 800;
+            letter-spacing: 0.08em;
+        }
+        p {
+            color: #999999;
+        }
+        .icon {
+            display: inline-block;
+            width: 80px;
+            height: 80px;
+     
+            line-height: 80px;
+            border-radius: 40px;
+            border: solid 1px #000;
+            font-size: 20px;
+        }
+    }
+
+
+}
+
+

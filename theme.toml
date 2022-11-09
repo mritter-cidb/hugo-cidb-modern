@@ -1,0 +1,12 @@
+name = "cidb modern"
+license = "MIT"
+licenselink = "https://github.com/mritter-cidb/hugo-cidb-modern/blob/master/LICENSE.md"
+description = "Modern."
+homepage = "https://github.com/mritter-cidb/hugo-cidb-modern"
+tags = ["blog", "plain", "blank", "starter"]
+features = ["blog"]
+min_version = 0.19
+
+[author]
+  name = "bluffy"
+  homepage = "https://github.com/bluffy"
