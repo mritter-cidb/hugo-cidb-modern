@@ -7,7 +7,7 @@
                 <div class="d-flex flex-column flex-sm-row text-center text-sm-start">
                     <div  class="flex-grow-1">{{ .Site.Params.copyright.text | safeHTML }}</div>
                         {{ range $index, $element := .Site.Params.copyright.links }}                                
-                            {{ if gt $index 0 }}&nbsp;|&nbsp;{{ end }}
+                            {{ if gt $index 0 }}&nbsp;&nbsp;|&nbsp;&nbsp;{{ end }}
                           <a href="{{  $element.url | relURL }}">{{ $element.name }}</a> 
                         {{ end }}
                         
